@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.nav nav {
+    display: flex;
+    gap: 15px;
+}
+.hero-img{
+    width: 100px;
+    height: 50px;
+}
+
+.nav-btn {
+    background-color: #ffffff;
+    color: #521A80;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #01D6E8; 
+}
+
+
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    gap: 40px;
+    align-items: center;
+}
+
+.main-info, .main-text {
+    flex: 1;
+}
+
+
+.intro-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.main-text h1 {
+    color: #521A80;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #01D6E8;
+    color: #521A80;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+.programma-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.programma-section h2 {
+    color: #521A80;
+    margin-bottom: 30px;
+}
+
+.programma-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+.programma-card {
+    background-color: #E6E6E6;
+    padding: 40px 20px;
+    border-radius: 6px;
+}
+
+.sfeer-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+}
+
+.sfeer-intro h2 {
+    color: #521A80;
+    margin-bottom: 20px;
+}
+
+.sfeer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.sfeer-photo-placeholder {
+    background-color: #CCCCCC;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555555;
+    font-weight: bold;
+    border: 2px dashed #999999;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 60px 20px;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .main-container, .sfeer-section {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+    .programma-grid {
+        grid-template-columns: 1fr; 
+    }
+}
